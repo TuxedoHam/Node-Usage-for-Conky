@@ -14,41 +14,41 @@ Configure:
 
 Make sure the script is executable:
 
-$ chmod 755 node-usage.sh
+$ `chmod 755 node-usage.sh`
 
-Add the following line to ~/.netrc remember to change 'myself'(username) and 'secret'(password)
+Add the following line to `~/.netrc` remember to change `'myself'(username)` and `'secret'(password)`
 
 machine customer-webtools-api.internode.on.net login myself password secret
 
 Example of doing it via terminal:
 
-$ echo "machine customer-webtools-api.internode.on.net login myself password secret" >> ~/.netrc
+$ `echo "machine customer-webtools-api.internode.on.net login myself password secret" >> ~/.netrc`
 
 now to be safe do:
 
-$ chmod 600 ~/.netrc
+$ `chmod 600 ~/.netrc`
 
 This is to make sure that the file is only readable by your account.
 
 To get the script to update for example every 30 minutes do the following to cron:
 
-$ crontab -e
+$ `crontab -e`
 
 and now add:
 
-*/30 * * * * /home/quail/programs/scripts/node-usage.sh
+`*/30 * * * * ~/programs/scripts/node-usage.sh`
 
 And it best not to have it updating anything less than 30 minutes.
 
 Usage:
 
 Here is the snippet of the code for the ~/.conkyrc file:
-
+```
 ${color #5b6dad}Internode Usage: ${hr 1}
  ${color #7f8ed3}${execi 900 cat ~/.config/internode/cache/node-percent.txt}% ${execibar 900 cat ~/.config/internode/cache/node-graph.txt}
  ${color #5b6dad}Used: ${color #7f8ed3}${execi 900 cat ~/.config/internode/cache/node-used.txt}   ${color #5b6dad}Quota: ${color #7f8ed3}${execi 900 cat ~/.config/internode/cache/node-quota.txt}${alignr}${color #5b6dad}Days Left: ${color #7f8ed3}${execi 900 cat ~/.config/internode/cache/node-rollover.txt}
  ${color #5b6dad}Today: ${color #7f8ed3}${execi 900 cat ~/.config/internode/cache/node-today.txt}${alignr}${color #5b6dad}Remaining: ${color #7f8ed3}${execi 900 cat ~/.config/internode/cache/node-remaining.txt}
-
+```
 
 FAQ
 
