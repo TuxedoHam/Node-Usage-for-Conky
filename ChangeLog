@@ -1,15 +1,15 @@
-2012-07-12 Dale Hopkins <me@dale.id.au> http://dale.id.au/
+2012-07-12 Dale Hopkins <me@dale.id.au> https://dale.id.au/
  
  * Fixed problem with spamming a proxy with useless info.
  * Updated contact info in README and script
 
-2010-04-15  Quail <quail.linux@gmail.com>
+2010-04-15  Dale Hopkins <me@dale.id.au> https://dale.id.au/
  
  * Added multiple account support, Thanks to Karl Bowden <karlbowden@gmail.com>
  * Updated README
 
 
-2010-04-15  Quail  <quail.linux@gmail.com>
+2010-04-15  Dale Hopkins <me@dale.id.au> https://dale.id.au/
 
  * Added current days usage.
  * Added a tmp directory for storing data downloaded and corrected some the
@@ -18,14 +18,14 @@
  * Updated README
 
 
-2010-04-12  Quail  <quail.linux@gmail.com>
+2010-04-12  Dale Hopkins <me@dale.id.au> https://dale.id.au/
 
  * Add remaining quote and average usage per day based on quota left.
  * Clean up code and made it more configurable in conky.
  * Update README
 
 
-2010-04-10  Quail  <quail.linux@gmail.com>
+2010-04-10  Dale Hopkins <me@dale.id.au> https://dale.id.au/
 
  * Added user agent string.
  * Modified the output data so it more configurable in Conky
@@ -34,6 +34,6 @@
  * Updated README.
 
 
-2010-04-09  Quail  <quail.linux@gmail.com>
+2010-04-09  Dale Hopkins <me@dale.id.au> https://dale.id.au/
 
  * Initial Release
