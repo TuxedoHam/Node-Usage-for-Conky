@@ -1,7 +1,7 @@
 #!/bin/bash
 ## node-usage.sh
 ## Author:
-## Dale Hopkins <me@dale.id.au> http://dale.id.au
+## Dale Hopkins <me@dale.id.au> https://dale.id.au
 ## Created on 8th April 2010.
 ## Licensed under the GPL version 3.
 ##
