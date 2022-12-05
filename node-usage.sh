@@ -26,7 +26,7 @@ cache_dir=$conf_dir/cache
 tmp_dir=$conf_dir/tmp
 log=$conf_dir/node-usage.log
 url=https://customer-webtools-api.internode.on.net/api/v1.5/
-curl="`which curl` -s -n -A \"Node\ Usage\ for\ Conky\ $ver\" -e http://dale.id.au/pub/node-usage/"
+curl="`which curl` -s -n -A \"Node\ Usage\ for\ Conky\ $ver\" -e https://github.com/TuxedoHam/Node-Usage-for-Conky/"
 
 # Create and check for working directories
 if [ ! -d $cache_dir ]; then 
